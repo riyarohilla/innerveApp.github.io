@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tambola Ticket</title>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+
+  var answers = ["ans1", "ans2", "ans3", "ans4", "ans5", "ans6", "ans7", "ans8", "ans9", "ans10", "ans11", "ans12", "ans13", "ans14", "ans15"];
+
+  function insertText() {
+  answers = shuffle(answers);
+
+  document.getElementById('td1').innerHTML = answers[0];
+  document.getElementById('td2').innerHTML = answers[1];
+  document.getElementById('td3').innerHTML = answers[2];
+  document.getElementById('td4').innerHTML = answers[3];
+  document.getElementById('td5').innerHTML = answers[4];
+  document.getElementById('td6').innerHTML = answers[5];
+  document.getElementById('td7').innerHTML = answers[6];
+  document.getElementById('td8').innerHTML = answers[7];
+  document.getElementById('td9').innerHTML = answers[8];
+  document.getElementById('td10').innerHTML = answers[9];
+  document.getElementById('td11').innerHTML = answers[10];
+  document.getElementById('td12').innerHTML = answers[11];
+  document.getElementById('td13').innerHTML = answers[12];
+  document.getElementById('td14').innerHTML = answers[13];
+  document.getElementById('td15').innerHTML = answers[14];
+
+
+  }
+
+  function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+  
+  function colourchange(){
+
+  }
+  </script>
+</head>
+
+<body onload="javascript:insertText()" >
+  <table>
+    <tr>
+      <td id="td1" , onclick="javascript:this.style.background = '#FF0000'";> </td>
+      <td id="td2", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td3", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td4", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td5", onclick="javascript:this.style.background = '#FF0000'";></td>
+    </tr>
+    <tr>
+      <td id="td6", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td7", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td8", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td9", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td10", onclick="javascript:this.style.background = '#FF0000'";></td>
+    </tr>
+    <tr>
+      <td id="td11", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td12", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td13", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td14", onclick="javascript:this.style.background = '#FF0000'";></td>
+      <td id="td15", onclick="javascript:this.style.background = '#FF0000'";></td>
+    </tr>
+  </table>
+<button type="submit" onclick="location.href='games.php';">Go Back!</button>  
+</body>
+
+</html>

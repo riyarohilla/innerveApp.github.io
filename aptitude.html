@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+		
+			<div id="logo"><h1>M</h1><br><h1>I</h1><br><h1>N</h1><br><h1>I</h1><br><br><h1>V</h1><br><h1>E</h1><br><h1>G</h1><br><h1>A</h1><br><h1>S</h1></div>
+            <div id="question"></div>
+           
+			<br>
+			<br>
+            <div id="choices">
+			
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+				<br><br><br>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div><br><br><br>
+                <div class="choice " id="C" onclick="checkAnswer('C')"></div><br><br><br>
+				<div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none" onclick="location.href='games.php';"></div>
+    </div>
+    <script src="quiz_aptitude.js"></script>
+	
+</body>
+</html>
